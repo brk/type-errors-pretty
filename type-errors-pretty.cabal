@@ -1,6 +1,6 @@
-cabal-version:       2.4
+cabal-version:       3.0 
 name:                type-errors-pretty
-version:             0.0.1.1
+version:             0.0.1.2
 synopsis:            Combinators for writing pretty type errors easily
 description:
     This library provides replacements for the @ErrorMessage@ constructors to
@@ -23,13 +23,14 @@ tested-with:         GHC == 8.2.2
                      GHC == 8.6.5
                      GHC == 8.8.3
                      GHC == 8.10.1
+                     GHC == 9.0.1
 
 source-repository head
   type:                git
-  location:            https://github.com/kowainik/type-errors-pretty.git
+  location:            https://github.com/brk/type-errors-pretty.git
 
 common common-options
-  build-depends:       base >= 4.10.1.0 && < 4.15
+  build-depends:       base >= 4.10.1.0 && < 5
 
   ghc-options:         -Wall
                        -Wcompat
